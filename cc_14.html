@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Support Ticket System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header, footer {
+            padding: 20px;
+            text-align: center;
+            background-color: violet;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        main {
+            padding: 10px;
+        }
+        .employeeCard {
+            display: inline-grid;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 20%;
+            overflow: clip;
+        }
+    </style>
 </head>
 <body>
-    
+    <!--Task1-Creating the Base Structure-->
+    <header><h3>Customer Support Ticket System</h3></header>
+    <main>
+        <div id="ticketContainer"></div>
+    </main>
+    <footer>Footer</footer>
+    <script src="cc_14.js"></script>
 </body>
 </html>
