@@ -22,3 +22,13 @@ function addSupportTicket(customerName, issueDescription, priorityLevel) {
 addSupportTicket('Nuri', 'Broken Phone', 'High');
 addSupportTicket('Nuhash', 'Broken Laptop', 'High');
 addSupportTicket('Nushi', 'Extension Cord Needed', 'Low');
+
+// Task3- Converting NodeLists to Arrays for Bulk Updates
+function highlightingHighPriorityTickets() {
+    const hpTicket = document.querySelectorAll('.high-priority');
+    const ticketArray = Array.from(hpTicket);
+    ticketArray.forEach(ticket => {
+        ticket.style.backgroundColor = 'tomato';
+    });
+}
+highlightingHighPriorityTickets();
