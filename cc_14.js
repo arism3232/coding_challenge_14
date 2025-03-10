@@ -18,6 +18,12 @@ function addSupportTicket(customerName, issueDescription, priorityLevel) {
         ticket.classList.add('high-priority')
     };
     document.getElementById('ticketContainer').appendChild(ticket);
+    // Task4- Implementing Ticket Resolution with Event Bubbling
+    resolveButton.addEventListener('click', function(event) {
+        console.log('Ticket is selected');
+        event.stopPropagation
+        ticket.removeChild();
+    });
 };
 addSupportTicket('Nuri', 'Broken Phone', 'High');
 addSupportTicket('Nuhash', 'Broken Laptop', 'High');
